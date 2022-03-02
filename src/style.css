@@ -1,0 +1,172 @@
+/* IMPORT GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+/* LAYOUT */
+
+body {
+font-family: 'Fredoka', sans-serif;
+}
+
+
+h3{
+margin:0 0 -20px 0;
+color:#3b3faa;
+}
+
+.logo {
+    width: 20%;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px!important;
+    margin-right: 40px !important;
+    margin-left: 40px!important;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(59, 63, 170, .4);
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-left: 60px;
+    margin-right: -573px !important;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3b3faa !important;
+    font-weight: 400;
+}
+
+/* CARDS */
+
+.card {
+    background-color: #f6f6f6 !important;
+    width: 100% !important;
+}
+
+.card-image {
+    background-color: #f6f6f6 !important;
+    width: 50% !important;
+    margin: 20px 0 20px 120px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #3b3faa !important;
+    border-color: #3b3faa !important;
+}
+
+
+/* ACCORDIONS */
+
+.accordion {
+    margin-bottom: 80px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: #3b3faa !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #f6f6f6 !important;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 20px 0 10px 20px;
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #3b3faa;
+	font-size:14px;
+	border-top:1px solid rgba(59, 63, 170, .4);
+	z-index:3;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 400px) {
+
+/* NAVIGATION */
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 320px;
+    top: -20px;
+}
+
+.navbar-nav {
+    margin: 0 0 0 55px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: 0.125rem;
+    width: 200px;
+}
+
+/* CARD */
+
+.card-image {
+    background-color: #f6f6f6 !important;
+    width: 50% !important;
+    margin: 20px 0 20px 78px;
+}
+
+.card {
+    margin: 0 0 30px 0;
+}
+
+}
